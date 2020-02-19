@@ -96,6 +96,11 @@ ul {
   position: absolute;
 }
 
+.card .people-card-modified {
+  display: flex;
+  font-size: 17px;
+}
+
 .notification-card {
   position: fixed;
   border: 1px solid rgba(0, 0, 0, 0.125);

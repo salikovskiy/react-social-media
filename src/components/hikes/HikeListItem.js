@@ -24,7 +24,7 @@ const HikeListItem = ({ hike }) => (
         {hike.difficulty}
       </button>
     )}
-    <button className="btn btn-info people-card">
+    <button className="btn btn-primary people-card">
       <i className="material-icons mr-2">perm_identity</i>
       {hike.people}
     </button>

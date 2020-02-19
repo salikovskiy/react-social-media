@@ -4,11 +4,11 @@ import moment from "moment";
 const Notifications = ({ notifications }) => (
   <div className="section">
     <div className="card-content notification-card ">
-      <span className="card-title h6 text-muted">Notifications</span>
+      <span className="card-title h6 text-muted mb-4">Notifications</span>
       <ul className="notifications">
         {notifications &&
           notifications.map(item => (
-            <li key={item.id} className="mb-2">
+            <li key={item.id} className="mt-2">
               <span className="text-info">{item.user} - </span>
               <span className="text-secondary">{item.content}</span>
               <div className="grey-text note-date">

@@ -24,7 +24,7 @@ const SignedInLinks = props => {
           </NavLink>
         </li>
         <li className="nav-item mx-3">
-          <button onClick={props.signOut} className="btn btn-secondary">
+          <button onClick={props.signOut} className="btn btn-outline-secondary">
             LogOut
           </button>
         </li>

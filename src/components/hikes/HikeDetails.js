@@ -4,6 +4,7 @@ import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import { Redirect } from "react-router-dom";
 import moment from "moment";
+import noImage from "../../assets/SVG/no-image.svg";
 
 const HikeDetails = props => {
   const { hike, auth } = props;
@@ -11,18 +12,50 @@ const HikeDetails = props => {
 
   if (hike) {
     return (
-      <div className="container section hikes-details">
+      <div className="container section hikes-details pt-4">
         <div className="card z-depth-0">
-          <div className="card-content">
-            <span className="card-title">{hike.title}</span>
-            <p>{hike.details}</p>
-          </div>
-          <div className="card-action gret lighten-4 grey-text">
-            <div>
-              Posted by {hike.authorFirstName}
-              {hike.authorLastName}
+          <img
+            className="card-img-top card-image"
+            src={hike.img ? hike.img : noImage}
+            alt="Hike img"
+          ></img>
+          <div className="card-content p-4">
+            <h2 className="card-title text-secondary">{hike.title}</h2>
+            <div className="d-flex mb-3">
+              {hike.difficulty === "Easy" && (
+                <button className="btn btn-success mr-2">
+                  {hike.difficulty}
+                </button>
+              )}
+              {hike.difficulty === "Medium" && (
+                <button className="btn btn-warning mr-2">
+                  {hike.difficulty}
+                </button>
+              )}
+              {hike.difficulty === "Hard" && (
+                <button className="btn btn-danger mr-2">
+                  {hike.difficulty}
+                </button>
+              )}
+              {hike.difficulty === "Impossible" && (
+                <button className="btn btn-dark mr-2">{hike.difficulty}</button>
+              )}
+              <button className="btn btn-primary people-card-modified">
+                <i className="material-icons mr-2">perm_identity</i>
+                {hike.people}
+              </button>
             </div>
-            <div>{moment(hike.createdAt.toDate()).calendar()}</div>
+            <p>{hike.details}</p>
+            <small className="text-muted">Contacts</small>
+            <p>{hike.contacts && hike.contacts}</p>
+            <hr className="my-2"></hr>
+            <div className="text-muted">
+              Posted by{" "}
+              <span className="text-primary">
+                {hike.authorFirstName} {hike.authorLastName}
+              </span>
+            </div>
+            <small>{moment(hike.createdAt.toDate()).calendar()}</small>
           </div>
         </div>
       </div>
