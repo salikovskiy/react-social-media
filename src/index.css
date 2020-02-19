@@ -2,20 +2,22 @@ html {
   min-height: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+button {
+  outline: none !important;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: rgb(178, 211, 189);
+  font-family: "Roboto", sans-serif;
+  background: #fff;
   min-height: 100%;
-}
-form {
-  padding: 20px;
-  margin-top: 60px;
-}
-form button,
-form h5 {
-  margin: 20px 0;
 }
 
 input[type="text"]:not(.browser-default):focus:not([readonly]),
@@ -32,3 +34,100 @@ input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
 input[type="password"]:not(.browser-default):focus:not([readonly]) + label {
   color: #31a561 !important;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.main {
+  height: 100vh;
+}
+
+.auth-container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.date-text {
+  font-size: 13px;
+}
+
+.author-text {
+  font-size: 14px;
+}
+
+.card-image {
+  height: 400px;
+  object-fit: cover;
+}
+
+.footer {
+  padding: 10px 0;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 12px;
+}
+
+.nav-logo {
+  height: 30px;
+}
+
+.card .difficulty-card {
+  left: 10px;
+  top: 10px;
+  position: absolute;
+}
+
+.card .people-card {
+  display: flex;
+  font-size: 17px;
+  left: 10px;
+  top: 55px;
+  position: absolute;
+}
+
+.notification-card {
+  position: fixed;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.main-heading {
+  animation-duration: 2s;
+}
+
+/* 
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+} */

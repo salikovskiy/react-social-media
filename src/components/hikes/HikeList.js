@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HikeList = ({ hikes }) => {
   return (
-    <div className="hikes-list section">
+    <div className="">
       {hikes &&
         hikes.map(hike => {
           return (

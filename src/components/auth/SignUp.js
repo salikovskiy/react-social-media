@@ -27,27 +27,48 @@ class SignUp extends Component {
     if (auth.uid) return <Redirect to="/" />;
 
     return (
-      <div className="container">
+      <div className="auth-container">
         <form onSubmit={this.handleSubmit} className="white">
-          <h5 className="grey-text text-darken-3">Sign up</h5>
-          <div className="input-field">
+          <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" onChange={this.handleChange} />
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              onChange={this.handleChange}
+            />
           </div>
-          <div className="input-field">
+          <div className="form-group">
             <label htmlFor="password">Password</label>
-            <input type="password" id="password" onChange={this.handleChange} />
+            <input
+              type="password"
+              className="form-control"
+              id="password"
+              onChange={this.handleChange}
+            />
           </div>
-          <div className="input-field">
+          <div className="form-group">
             <label htmlFor="firstName">First Name</label>
-            <input type="text" id="firstName" onChange={this.handleChange} />
+            <input
+              type="text"
+              className="form-control"
+              id="firstName"
+              onChange={this.handleChange}
+            />
           </div>
-          <div className="input-field">
+          <div className="form-group">
             <label htmlFor="lastName">Last Name</label>
-            <input type="text" id="lastName" onChange={this.handleChange} />
+            <input
+              type="text"
+              className="form-control"
+              id="lastName"
+              onChange={this.handleChange}
+            />
           </div>
-          <div className="input-field">
-            <button className="btn lighten-1 z-depth-0">Sign up</button>
+          <div className="form-group">
+            <button type="submit" className="btn btn-primary">
+              Sign up
+            </button>
             <div className="red-text center">
               {authError ? <p>{authError}</p> : null}
             </div>

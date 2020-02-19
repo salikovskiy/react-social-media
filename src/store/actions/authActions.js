@@ -23,6 +23,7 @@ export const signOut = () => {
       .signOut()
       .then(() => {
         dispatch({ type: "SIGNOUT_SUCCESS" });
+        window.location.reload();
       });
   };
 };

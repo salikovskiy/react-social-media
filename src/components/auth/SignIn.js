@@ -25,19 +25,30 @@ class SignIn extends Component {
     if (auth.uid) return <Redirect to="/" />;
 
     return (
-      <div className="container">
+      <div className="auth-container">
         <form onSubmit={this.handleSubmit} className="white">
-          <h5 className="grey-text text-darken-3">Sign in</h5>
-          <div className="input-field">
+          <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" onChange={this.handleChange} />
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              onChange={this.handleChange}
+            />
           </div>
-          <div className="input-field">
+          <div className="form-group">
             <label htmlFor="password">Password</label>
-            <input type="password" id="password" onChange={this.handleChange} />
+            <input
+              type="password"
+              className="form-control"
+              id="password"
+              onChange={this.handleChange}
+            />
           </div>
           <div className="input-field">
-            <button className="btn lighten-1 z-depth-0">Login</button>
+            <button type="submit" className="btn btn-primary">
+              Login
+            </button>
             <div className="red-text center">
               {authError ? <p>{authError}</p> : null}
             </div>
