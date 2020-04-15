@@ -1,4 +1,4 @@
-#Simle social media app w/ React, Redux and Firebase
+# Simle social media app w/ React, Redux and Firebase
 ## [Check it live here](https://hike-app-b2db2.firebaseapp.com/)
  
  ## Features
