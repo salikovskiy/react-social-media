@@ -15,4 +15,4 @@
 - [Redux Thunk](https://github.com/reduxjs/redux-thunk)
 - [Firebase](https://firebase.google.com/)
 
-<img src="https://i.postimg.cc/598DbxBr/hikee-preview-img.jpg">
+<img src="https://i.ibb.co/SyL6hd4/P305JQ1.jpg">
