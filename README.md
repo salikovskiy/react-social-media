@@ -1,5 +1,5 @@
-## React social media app
-### [Demo](https://hike-app-b2db2.firebaseapp.com/)
+## 🚶 React social media app 
+### [💽 Demo](https://hike-app-b2db2.firebaseapp.com/) 
  
  This project was made to consolidate my knowledge of react and redux, and to learn how to work with firebase and cloud functions
  
