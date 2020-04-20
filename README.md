@@ -1,16 +1,16 @@
 ## [React social media app](https://hike-app-b2db2.firebaseapp.com/)
-#### [Demo](https://hike-app-b2db2.firebaseapp.com/)
+### [Demo](https://hike-app-b2db2.firebaseapp.com/)
  
- ## Features
+ This project was made to consolidate my knowledge of react and redux, and to learn how to work with firebase and cloud functions
+ 
+ ## Features:
 
-- the ability for users to make posts with text and media files
-- a live feed of those posts
-- as well as user authentication
+- [x] the ability for users to make posts with text and media files
+- [x] a live feed of those posts
+- [x] as well as user authentication
 
 ## Built With
 
-- [React](https://reactjs.org/)
-- [React Router](https://github.com/ReactTraining/react-router)
-- [Redux](https://redux.js.org/)
-- [Redux Thunk](https://github.com/reduxjs/redux-thunk)
-- [Firebase](https://firebase.google.com/)
+- React, React Router
+- Redux, Redux Thunk
+- Firebase
