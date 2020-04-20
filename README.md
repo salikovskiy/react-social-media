@@ -1,11 +1,11 @@
-# Simle social media app w/ React, Redux and Firebase
-## [Check it live here](https://hike-app-b2db2.firebaseapp.com/)
+## [React social media app](https://hike-app-b2db2.firebaseapp.com/)
+#### [Demo](https://hike-app-b2db2.firebaseapp.com/)
  
  ## Features
 
-- Create account
-- Create hike (post)
-- Watch other people's hikes
+- the ability for users to make posts with text and media files
+- a live feed of those posts
+- as well as user authentication
 
 ## Built With
 
@@ -14,7 +14,3 @@
 - [Redux](https://redux.js.org/)
 - [Redux Thunk](https://github.com/reduxjs/redux-thunk)
 - [Firebase](https://firebase.google.com/)
-
-## Preview
-
-<img src="https://i.ibb.co/xL42pft/P305JQ1.jpg">
